@@ -2,18 +2,31 @@
 
 // fs.writeFileSync('hello.txt','hello from sagar')
 
-console.log("hello world")
+// console.log("hello world")
 
-const multi = (a,b) => a*b ;
+// const multi = (a,b) => a*b ;
 
-console.log(multi(5,6));
+// console.log(multi(5,6));
 
-const student = {
+// const student = {
 
-    name: 'sagar sethi',
-    age: 24,
-    roll_no: 39
+//     name: 'sagar sethi',
+//     age: 24,
+//     roll_no: 39
 
-}
+// }
 
-console.log(student);
+// console.log(student);
+
+const fruits = ['apple', 'oranges' , ' ', 'mango', ' ' , 'lemon'] ;
+
+console.log(fruits.map(fruit => {
+    if(fruit === ' ')
+    {
+        return 'empty string'
+    }
+    else
+    {
+        return fruit
+    }
+}))
