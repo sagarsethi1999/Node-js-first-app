@@ -1,8 +1,37 @@
 const http = require('http');
 
 const server = http.createServer(function(req, res) {
-    res.write('SAGAR SETHI');
-    res.end();
+   const url =req.url;
+
+   if(url === '/home')
+   {
+    res.write('<html>')
+    res.write('<head><title>Enter Message</title><head>')
+    res.write('<body>WELCOME HOME</body>')
+    res.write('</html>')
+    return res.end();
+   }
+   if(url === '/about')
+   {
+    res.write('<html>')
+    res.write('<head><title>Enter Message</title><head>')
+    res.write('<body>WELCOME TO ABOUT US PAGE</body>')
+    res.write('</html>')
+    return res.end();
+   }
+   if(url === '/node')
+   {
+    res.write('<html>')
+    res.write('<head><title>Enter Message</title><head>')
+    res.write('<body>WELCOME TO MY NODE JS PROJECT</body>')
+    res.write('</html>')
+    return res.end();
+   }
+   res.write('<html>')
+    res.write('<head><title>Enter Message</title><head>')
+    res.write('<body>WELCOME TO MY NODE JS PROJECT </body>')
+    res.write('</html>')
+    res.end()
     
 });
 
